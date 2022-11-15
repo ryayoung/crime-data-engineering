@@ -1,2 +1,5 @@
-*.DS_Store
-*__pycache__
+.DS_Store
+__pycache__
+.ipynb_checkpoints
+crime_16_19__j6g4-gayk
+crime_97_15__6vnq-az4b
