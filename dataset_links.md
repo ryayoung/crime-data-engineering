@@ -1,0 +1,3 @@
+- [School Programs in Colorado](https://dev.socrata.com/foundry/data.colorado.gov/jnj7-fw37) jnj7-fw37
+- [Census School Districts in Colorado 2012](https://data.colorado.gov/Demographics/Census-School-Districts-in-Colorado-2012/xg8m-4prc) xg8m-4prc
+- [Cities in Colorado](https://data.colorado.gov/Transportation/Cities-in-Colorado/7nuk-vzhq) 7nuk-vzhq

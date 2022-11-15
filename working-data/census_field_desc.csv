@@ -1,0 +1,156 @@
+,column,description
+0,county,Geographic Area common name
+3,pop,Population Estimate for the given time range
+4,hispanic,Estimate for the Hispanic Population
+5,white_nh,"Estimate for the White, Non-Hispanic Population"
+6,black_nh,"Estimate for the Black, Non-Hispanic Population"
+7,ntvam_nh,"Estimate for the Native American, Non-Hispanic Population"
+8,asian_nh,"Estimate for the Asian, Non-Hispanic Population"
+9,hawpi_nh,"Estimate for the Hawaiian and Pacific Islander, Non-Hispanic Population"
+10,other_nh,Estimate for the population of those identifying with any other race (Non-Hispanic)
+11,twoplus_nh,Estimate for the population who identifies with more than one race (Non-Hispanic)
+12,male,Estimate for the total male population
+13,female,Estimate for the total female population
+14,ageless5,Estimate for the total population less than 5 years of age (0 to 5)
+15,age5_9,Estimate for the total population from 5 to 9 years of age
+16,age10_14,Estimate for the total population from 10 to 14 years of age
+17,age15_19,Estimate for the total population from 15 to 19 years of age
+18,age20_24,Estimate for the total population from 20 to 24 years of age
+19,age25_29,Estimate for the total population from 25 to 29 years of age
+20,age30_34,Estimate for the total population from 30 to 34 years of age
+21,age35_39,Estimate for the total population from 35 to 39 years of age
+22,age40_44,Estimate for the total population from 40 to 45 years of age
+23,age45_49,Estimate for the total population from 45 to 49 years of age
+24,age50_54,Estimate for the total population from 50 to 54 years of age
+25,age55_59,Estimate for the total population from 55 to 59 years of age
+26,age60_64,Estimate for the total population from 60 to 64 years of age
+27,age65_69,Estimate for the total population from 65 to 69 years of age
+28,age70_74,Estimate for the total population from 70 to 74 years of age
+29,age75_79,Estimate for the total population from 75 to 79 years of age
+30,age80_84,Estimate for the total population from 80 to 84 years of age
+31,age85pl,Estimate for the total population of 85 years of age or older
+32,ageless18,Estimate for the total population less than 18 years of age (0 to 17)
+33,age18_24,Estimate for the total population from 18 to 24 years of age
+34,med_age,Median age of the population for the area
+35,households,Estimate for the total number of household
+36,familyhh,Estimate for the total number of family household
+37,nonfamhh,Estimate for the total number of nonfamily household
+38,hhldralone,Estimate for the total number of nonfamily households where householder lives alone
+39,hhldr_naln,Estimate for the total number of nonfamily households where householder does not live alone
+40,housing_un,Estimated total number of housing units
+41,occ_hu,Estimated number of occupied housing units
+42,vac_hu,Estimated number of vacant housing units
+43,owned,Estimated number of owner-occupied housing units
+44,rented,Estimated number of renter-occupied housing units
+45,pop25plus,Estimated total population 25 years or older (universe for educational attainment)
+46,nohsdipl,Estimated population 25 years or older that does not have a high school diploma or equivalent (GED) level of education
+47,hsgrad_sc,Estimated population 25 years or older that has a high school level of education (or equivalent) or higher education (some college) but did not achieve a bachelors degree or higher
+48,bachl_hghr,"Estimated total population 25 years or older with a Bachelors Degree, Masters Degree, Phd or other Professional Degree"
+49,med_hh_inc,Estimated median household income
+50,med_fam_in,Estimated median family income
+51,per_cap_in,Estimated per capita income
+52,med_yr_blt,median year structure built
+53,med_c_rent,Estimated median contract rent
+54,med_g_rent,Estimated median gross rent
+55,med_hm_val,Estimated median home value
+56,citz_birth,Estimated total population that is a US Citizen by birth
+57,citz_nat,Estimated total population that is a US Citizen by Naturalization
+58,not_citz,Estimated total population that is not a US Citizen
+59,born_in_co,Estimated total population that was born in Colorado
+60,brn_oth_st,Estimated total population that was born in a state other than Colorado
+61,ntv_b_o_us,Estimated total population that was born outside of the US (In a US Territory Abroad)
+62,foreign_b,Estimated total population that was born in a foreign country
+63,pop_1p,Estimated total population 1 year old or more
+64,same_house,Estimated total population living in the same house as they did 1 year ago
+65,same_cnty,Estimated total population that moved within the same county
+66,same_state,Estimated total population that moved to a different county within the same state (Colorado)
+67,diff_state,Estimated total population living in a state other than Colorado 1 year ago
+68,frm_abroad,Estimated total population living abroad 1 year ago
+69,wrkrs_16pl,Estimated total population age 16 years or older who worked in the past 12 months
+70,car_all,Estimated total working population 16+ who traveled to work by car
+71,car_alone,Estimated total working population 16+ who traveled to work by car alone
+72,car_carpoo,Estimated total working population 16+ who traveled to work by car with others
+73,public_trn,Estimated total working population 16+ who took public transportation to work
+74,pt_bus,Estimated total working population 16+ who rode a bus to work
+75,pt_other,Estimated total working population 16+ who used any other form of public transportation (other than a bus) to work
+76,bike,Estimated total working population 16+ who rode a bike to work
+77,walk,Estimated total working population 16+ who walked to work
+78,tr_other,Estimated total working population 16+ who used any other form of transportation not mentioned previously
+79,wrk_home,Estimated total working population 16+ who worked from home
+80,w_16pl_nh,Estimated total working population 16+ who commuted to work
+81,t_less_10,Estimated total working population 16+ whose commute time was less than 10 minutes
+82,t_10_19,Estimated total working population 16+ whose commute time was from 10 to 19 minutes
+83,t_20_29,Estimated total working population 16+ whose commute time was from 20 to 29 minutes
+84,t_30_39,Estimated total working population 16+ whose commute time was from 30 to 39 minutes
+85,t_40_59,Estimated total working population 16+ whose commute time was from 40 to 59 minutes
+86,t_60_pl,Estimated total working population 16+ whose commute time was 60 minutes or higher
+87,pop_3pl,Estimated total population 3 years old or higher. (Universe for school enrollment)
+88,enrolled,Estimated total population 3+ who are enrolled in school
+89,preschool,Estimated total population 3+ enrolled in preschool
+90,kndrgrtn,Estimated total population enrolled in kindergarten
+91,gr_1_4,Estimated total population enrolled in grades 1-4
+92,gr_5_8,Estimated total population enrolled in grades 5-8
+93,gr_9_12,Estimated total population enrolled in grades 9-12
+94,undergrad,Estimated total population enrolled in undergraduate studies
+95,grad_prof,Estimated total population enrolled in graduate studies
+96,n_enrolled,Population 3 yrs and older not enrolled in school
+97,blt_2010_p,Estimated number of housing units built since 2010
+98,b2000_2009,Estimated number of housing units built from 2000 to 2009
+99,b1990_1999,Estimated number of housing units built from 1990 to 1999
+100,b1980_1989,Estimated number of housing units built from 1980 to 1989
+101,b1970_1979,Estimated number of housing units built from 1970 to 1979
+102,b1960_1969,Estimated number of housing units built from 1960 to 1969
+103,b1950_1959,Estimated number of housing units built from 1950 to 1959
+104,b1940_1949,Estimated number of housing units built from 1940 to 1949
+105,b1939_e,Estimated number of housing units built in 1939 or earlier
+106,own_occ_hu,Estimated number of owner occupied housing units
+107,v_l_50k,"Estimated number of owner occupied housing units where the home value is less than $50,000"
+108,v50k_100k,"Estimated number of owner occupied housing units where the home value is from $50,000 to $99,999"
+109,v100k_150k,"Estimated number of owner occupied housing units where the home value is from $100,000 to $149,999"
+110,v150k_200k,"Estimated number of owner occupied housing units where the home value is from $150,000 to $199,999"
+111,v200k_250k,"Estimated number of owner occupied housing units where the home value is from $200,000 to $249,999"
+112,v250k_300k,"Estimated number of owner occupied housing units where the home value is from $250,000 to $299,999"
+113,v300k_400k,"Estimated number of owner occupied housing units where the home value is from $300,000 to $399,999"
+114,v400k_500k,"Estimated number of owner occupied housing units where the home value is from $400,000 to $499,999"
+115,v500k_750k,"Estimated number of owner occupied housing units where the home value is from $500,000 to $749,999"
+116,v750k_1m,"Estimated number of owner occupied housing units where the home value is from $750,000 to $999,999"
+118,v_1m_plus,"Estimated number of owner occupied housing units where the home value is $1,000,000 or higher"
+119,rnt_occ_hu,Estimated number of renter occupied housing units
+120,rntl400,Estimated number of renter occupied housing units where the gross rent is less than $400
+121,r400T599,Estimated number of renter occupied housing units where the gross rent is from $400 to $599
+122,r600T799,Estimated number of renter occupied housing units where the gross rent is from $600 to $799
+123,r800t999,Estimated number of renter occupied housing units where the gross rent is from $800 to $999
+124,r1000t1249,"Estimated number of renter occupied housing units where the gross rent is from $1,000 to $1,249"
+125,r1250t1499,"Estimated number of renter occupied housing units where the gross rent is from $1,250 to $1,499"
+126,r1500t1999,"Estimated number of renter occupied housing units where the gross rent is from $1,500 to $1,999"
+127,r2000pl,Estimated number of renter occupied housing units where the gross rent is greater than $2000
+128,rnocshr,Estimated number of renter occupied housing units where the householder pays no cash rent
+129,ps_uni,Estimated total population for whom poverty status is determined
+130,ps_below,Estimated population for whom poverty status is below the poverty level
+131,ps_bel150,Estimated population for whom poverty status is below 150% the poverty level
+132,tot_l18,Estimated population who is under 18 years of age for whom poverty status is determined.                    [B17001_048
+133,puni_65pl,Estimated population who is over 65 years of age for whom poverty status is determined
+134,pov_l18,Estimated population who is under 18 years of age where the status is below the poverty line
+135,pov_65pl,Estimated population who is over 65 years of age where the status is below the poverty line
+136,avghhsize,Estimated average household size of occupied housing units
+137,hhi_l20k,"Estimated number of households whose income in the past 12 months is less than $20,000"
+138,hhi20_30,"Estimated number of households whose income in the past 12 months is from $20,000 and $29,999"
+139,hhi30_40,"Estimated number of households whose income in the past 12 months is from $30,000 and $39,999"
+140,hhi40_50,"Estimated number of households whose income in the past 12 months is between $40,000 and $49,999"
+141,hhi50_60,"Estimated number of households whose income in the past 12 months is between $50,000 and $59,999"
+142,hhi60_75,"Estimated number of households whose income in the past 12 months is between $60,000 and $74,999"
+143,hhi75_100,"Estimated number of households whose income in the past 12 months is between $75,000 and $99,999"
+144,hhi100_125,"Estimated number of households whose income in the past 12 months is between $100,000 and $124,999"
+145,hhi125_150,"Estimated number of households whose income in the past 12 months is between $125,000 and $149,999"
+146,hhi150_200,"Estimated number of households whose income in the past 12 months is between $150,000 and $199,999"
+147,hhi200_pl,"Estimated number of households whose income in the past 12 months is $200,000 or more"
+148,civ_ni_pop,Estimated total population of civilians not institutionalized (disabled and not disabled)
+149,disabled,Estimated population of civilian non-institutionalized that are disabled
+150,pop16_pls,Estimated population 16 years and over
+151,laborforce,Estimated number of people in the labor force
+152,civ_lf,Estimated number of people in the civilian labor force
+153,emp,Estimated number of people in the civilian labor force that are employed
+154,unemp,Estimated number of people in the civilian labor force that are not employed
+155,armedfrcs,Estimated number of people in the armed forces
+156,not_lf,Estimated number of people not in the labor force
+157,civ_ni_,Estimated total civilian non-institutionalized population
