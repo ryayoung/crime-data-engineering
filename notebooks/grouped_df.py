@@ -1,32 +1,7 @@
 import pandas as pd
 from copy import deepcopy
-
-def separate_by(df, txt, index, keep=[], start=False, end=False, mode="") -> (pd.DataFrame, pd.DataFrame):
-    """
-    Given a df and a substring, return two dfs:
-    1. df containing: county + all columns whose name does NOT contain substring
-    2. df containing: county + all columns whose name DOES contain substring
-    """
-    names = [c for c in df.columns if (
-            c.startswith(txt) if start else c.endswith(txt) if end else txt in c
-        )]
-
-    include = df.copy()[index + keep + names]
-    exclude = df.copy().drop(columns = keep + names)
-
-    if mode == 'include': return include
-        
-    if mode == 'exclude': return exclude
-
-    return (include, exclude)
-
-
-def match_rename(df, text, replacement) -> pd.DataFrame:
-    for c in df.columns:
-        if c != text:
-            df = df.rename(columns={c: c.replace(text, replacement)})
-    return df
-
+import df_util
+from df_util import separate_by
 
 
 class GroupedDF(object):
@@ -50,7 +25,7 @@ class GroupedDF(object):
 
         if self._show_g_names == False:
             for k, v in self._dict.items():
-                self._dict[k] = match_rename(v, f'{k}_', '')
+                self._dict[k] = v.col_replace(f'{k}_', '')
 
         for name, cols in self._custom.items():
             self._dict[name] = self._df[cols]
