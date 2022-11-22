@@ -8,7 +8,7 @@ def head(*dfs):
         display(df.head(3))
 
 
-def separate_by(df, to_match:list or str, index=[], keep=[], start=False, end=False, mode="") -> (pd.DataFrame, pd.DataFrame):
+def separate_by(df, to_match:list or str, index=[], keep=[], start=False, end=False, mode=None) -> (pd.DataFrame, pd.DataFrame):
     """
     Given a df and a substring, return two dfs:
     1. df containing: county + all columns whose name does NOT contain substring
@@ -24,10 +24,10 @@ def separate_by(df, to_match:list or str, index=[], keep=[], start=False, end=Fa
     include = df.copy()[index + keep + names]
     exclude = df.copy().drop(columns = keep + names)
 
-    if mode == 'include': return include
-        
-    if mode == 'exclude': return exclude
-
+    if mode == 'include':
+        return include
+    if mode == 'exclude':
+        return exclude
     return (include, exclude)
 
 
@@ -41,7 +41,10 @@ def set_columns(self, new:list) -> pd.DataFrame:
 
 
 def rename_col(self, old:str, new:str) -> pd.DataFrame:
-    ''' ::pd.DataFrame '''
+    ''' ::pd.DataFrame
+    Renames one column.
+    Traditional `rename(columns=dict())` syntax is verbose and harder to read and edit.
+    '''
     return self.rename(columns={old:new})
 
 
