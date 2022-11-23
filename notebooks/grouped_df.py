@@ -1,7 +1,6 @@
 import pandas as pd
 from copy import deepcopy
-import df_util
-from df_util import separate_by
+from workspace import separate_by
 
 
 class GroupedDF(object):
