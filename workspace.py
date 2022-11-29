@@ -2,6 +2,7 @@ import pandas as pd, numpy as np
 import pandas_plugin
 import sqlite3 as sqlite
 import re
+from inject_attr import inject, Inject
 
 sql = dict(
     raw=dict(con=sqlite.connect('data_raw.db'), cache=dict()),
@@ -69,9 +70,6 @@ write_main = lambda *args, **kwargs: to_sql(*args, **kwargs, con='main')
 def head(*dfs, n=3, with_tail=False):
     '''
     Like display() and pd.DataFrame.head() got married and had a kid
-    - More flexible than display() with shorter previews by default
-    - Better than .head() because it prints the ACTUAL shape of the
-    dataframe, not the shape of the preview.
     - `with_tail` will concat head and tail together.
     '''
     for df in dfs:

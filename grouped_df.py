@@ -1,6 +1,6 @@
 import pandas as pd
 from copy import deepcopy
-from workspace import separate_by
+import pandas_plugin
 
 
 class GroupedDF(object):
@@ -20,7 +20,7 @@ class GroupedDF(object):
     
 
     def refresh_groups(self):
-        self._dict = {g: separate_by(self._df, g, self.index, start=True, mode='include') for g in GroupedDF.groups.keys()}
+        self._dict = {g: self._df.separate_by(g, self.index, start=True, mode='include') for g in GroupedDF.groups.keys()}
 
         if self._show_g_names == False:
             for k, v in self._dict.items():

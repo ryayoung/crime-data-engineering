@@ -9,13 +9,19 @@ def args_to_list(*args) -> list:
     ['a', 'b']
     >>> args_to_list(['a'], 'b')
     ['a', 'b']
-    >>> args_to_list(['a'], ['b'])
-    ['a', 'b']
     """
     is_list_or_tuple = lambda i: isinstance(i, list) or isinstance(i, tuple)
     return [ item for sublist in 
             [ i if is_list_or_tuple(i) else [i] for i in args ]
         for item in sublist ]
+
+
+class _(Inject, to=pd.Series):
+
+    def rename_vals_from_df(self, changes:pd.DataFrame) -> pd.Series:
+        cols = changes.columns
+        old, new = changes[cols[0]], changes[cols[1]]
+        return self.map(dict(zip(old, new)))
 
 
 
@@ -96,7 +102,7 @@ class _(Inject, to=pd.DataFrame):
         return df
 
 
-    def insert_at(self, target:str or int, name:str, col:pd.Series) -> None:
+    def insert_at(self, target:str or int, name:str, col:pd.Series) -> pd.DataFrame:
         """
         Insert col before target col name, or to index.
         Like df.insert(), but takes a column name as location, instead of int """
@@ -159,3 +165,15 @@ class _(Inject, to=pd.DataFrame):
             to_display = self.head(3)
         display(to_display)
         return self
+    
+
+    def rename_vals_from_df(self, column:str, changes:pd.DataFrame) -> pd.DataFrame:
+        df = self.copy()
+        df[column] = df[column].rename_vals_from_df(changes)
+        return df
+
+
+    def rename_cols_from_df(self, changes:pd.DataFrame) -> pd.DataFrame:
+        cols = changes.columns
+        old, new = changes[cols[0]], changes[cols[1]]
+        return self.rename(columns=dict(zip(old, new)))
